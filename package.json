@@ -3,22 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev-start": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js",
+    "setup-css": "npx tailwindcss -i ./styles/globals.css -o ./dist/output.css --watch",
+    "zip": "zip -r archive_name.zip next.config.js next-env.d.ts package.json pages server.js styles tsconfig.json yarn.lock .next package-lock.json tailwind.config.js  postcss.config.js"
   },
   "dependencies": {
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-responsive": "^9.0.0-beta.8"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
+    "autoprefixer": "^10.4.7",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
     "typescript": "4.6.4"
   }
 }

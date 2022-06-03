@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Kanit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +17,60 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.animation-background{
+  animation: myAnim 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal forwards;
+  width: fit-content !important;
+  margin-left: -20rem !important;
+}
+.animation-background2{
+  width: fit-content !important;
+
+  margin-left: -4rem !important;
+  animation: myAnim2 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: translateX(0)  ;
+	}
+  50% {
+		transform: translateX(-50px) ;
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes myAnim2 {
+	0% {
+		transform: translateX(0)  ;
+	}
+  50% {
+		transform: translateX(50px) ;
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+
+
+
+.animation-backgroundtwo {
+  position: fixed !important;
+  bottom: 0px;
+  height: 50% !important;
+  min-width: max-content !important;
+}
+
+
+.animation-backgroundone {
+  position: fixed !important;
+  bottom: 0px;
+  height: 50% !important;
+  width: auto !important;
+  min-width: max-content !important;
 }
