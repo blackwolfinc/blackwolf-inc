@@ -4,7 +4,7 @@ import React from "react";
 import { Layout } from "../components/layout/Layout";
 import image from "../public/assets/img/wolf3.png";
 
-const aboutus: NextPage = () => {
+const project: NextPage = () => {
 
 
   const reanderCard =()=>{
@@ -39,11 +39,11 @@ const aboutus: NextPage = () => {
   return (
     <Layout pageTitle="colelction">
       <div className="flex flex-col bg-gradient-to-br from-[#1F1F1F] via-[#1F1F1F] to-[#080707] w-full h-full min-h-[100vh]  justify-center  items-center text-stone-200">
-            <h1 className="text-4xl text-[#fff7] text-center p-4"> Kegagalan terbesar adalah ketika tidak berani mencoba </h1>
-            <p className="text-[#fff7]">- Black Wolf Tech Indonesia -</p>
+            <h1 className="text-4xl text-[#fff7] text-center p-4">- Comming Soon - </h1>
+           
       </div>
     </Layout>
   );
 };
 
-export default aboutus;
+export default project;
