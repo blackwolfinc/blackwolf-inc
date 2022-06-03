@@ -12,7 +12,7 @@ interface LayoutProps {
 export const Layout = (props : LayoutProps) => {
     const {children ,pageTitle } = props
   return (
-   <div>
+   <div className='bg-gradient-to-br from-[#1F1F1F] via-[#1F1F1F] to-[#080707]'>
     <Head>
         <title>{pageTitle}</title>
         <meta name="description" content="Black Wolf Tech Indonesia" />

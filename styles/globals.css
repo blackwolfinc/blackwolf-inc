@@ -74,3 +74,8 @@ a {
   width: auto !important;
   min-width: max-content !important;
 }
+.neonText {
+  color: #fff;
+  text-shadow:
+  0 0 7px #0f0d0d, -1px 1px 10px #fff, 0 0 21px #181818, 0 0 42px #1f1f1f, 0 0 82px #151515, 0 0 92px #a1a1a1, 0 0 102px #080808, 0 0 151px #d7a85f ;
+}
