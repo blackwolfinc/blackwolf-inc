@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   
         <div className="flex flex-col bg-gradient-to-br from-[#1F1F1F] via-[#1F1F1F] to-[#080707] w-full h-full min-h-[100vh]  justify-center  items-center">
           <div className="mt-[1rem] flex justify-center z-30 content-center self-center items-center">
-            <Image height={300} width={300} src={Forest} />
+            <Image height={300} width={300} src={wolf} />
             <p className="text-2xl  text-stone-200 capitalize neonText ">
               Black wolf Tech Indonesia{" "}
             </p>
