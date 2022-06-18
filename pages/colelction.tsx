@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import React from "react";
+import { Footer2 } from "../components/Footer2/Footer";
 import { Layout } from "../components/layout/Layout";
 import image from "../public/assets/img/wolf3.png";
 
@@ -30,8 +31,9 @@ const colelction: NextPage = () => {
   };
 
   return (
+    <>
     <Layout pageTitle="colelction">
-      <div className="flex flex-col bg-gradient-to-br from-[#1F1F1F] via-[#1F1F1F] to-[#080707] w-full h-full min-h-[100vh]  justify-center  items-center">
+      <div className="flex flex-col w-full h-full min-h-[100vh]  justify-center  items-center">
         <div className="mt-[1rem] flex justify-center z-30 content-center self-center items-center">
           <div className="flex flex-row w-full space-x-4 ">
             {reanderCard()}
@@ -39,6 +41,8 @@ const colelction: NextPage = () => {
         </div>
       </div>{" "}
     </Layout>
+    <Footer2/>
+    </>
   );
 };
 
