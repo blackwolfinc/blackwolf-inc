@@ -23,10 +23,9 @@ a {
 .animation-background{
   animation: myAnim 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal forwards;
   width: fit-content !important;
-  margin-left: -20rem !important;
+  /* margin-left: -10rem !important; */
 }
 .animation-background2{
-  width: fit-content !important;
 
   margin-left: -4rem !important;
   animation: myAnim2 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal forwards;
@@ -63,6 +62,8 @@ a {
   position: fixed !important;
   bottom: 0px;
   height: 50% !important;
+  width: auto !important;
+
   min-width: max-content !important;
 }
 
@@ -72,10 +73,26 @@ a {
   bottom: 0px;
   height: 50% !important;
   width: auto !important;
+
   min-width: max-content !important;
 }
 .neonText {
   color: #fff;
   text-shadow:
   0 0 7px #0f0d0d, -1px 1px 10px #fff, 0 0 21px #181818, 0 0 42px #1f1f1f, 0 0 82px #151515, 0 0 92px #a1a1a1, 0 0 102px #080808, 0 0 151px #d7a85f ;
+}
+
+
+
+.dropClaw {
+  
+  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(12px) opacity(0.8);
+  
+}
+
+
+.dropLogo {
+  
+  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(0px) ;
+  
 }
