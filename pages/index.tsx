@@ -48,38 +48,93 @@ const Home: NextPage = () => {
       <Layout pageTitle="Homepage">
         <div className="flex flex-col w-full h-full min-h-[100vh] relative  justify-center  items-center  overflow-x-clip">
           <div className="mt-[1rem] flex justify-center z-30 content-center self-center items-center dropLogo">
-            <Image height={300} width={300} src={wolf} />
+            <Image alt="" height={300} width={300} src={wolf} />
             <p className="text-2xl  text-stone-200 capitalize neonText ">
               Black wolf Tech Indonesia{" "}
             </p>
           </div>
-       
         </div>
       </Layout>
 
       <div className="min-h-[45rem] relative     overflow-clip  bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] text-white pt-[2rem] px-[1.45rem] flex flex-row justify-around space-x-4 pb-8">
-     
-        <div className="absolute top-0 mt-[-20rem] mr-[-40rem]  overflow-clip  dropClaw right-0 ">
-          
-          <Image height={1000} width={1400} src={Claw} />
-        </div>
-          {/* Dexstop Header */}
-      <MediaQuery minWidth={768}>
-      <div className="w-full bg-[#242424] rounded-md p-3 text-lg w-8/12 tracking-widest">
-        <h1 className="text-3xl">Our Company</h1>
-        <hr className="my-5" />
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente vitae nobis delectus reiciendis officia consequatur et blanditiis? Quaerat, sint ducimus iure officia autem, minima laboriosam maxime totam incidunt saepe adipisci tempora reiciendis exercitationem at esse ipsa fugit deserunt! Fugit recusandae distinctio maiores aut vero a dolore! Amet, voluptatibus omnis quasi ullam perspiciatis nobis eaque inventore nesciunt hic ab aut. Unde laudantium eius temporibus eum, natus deserunt rem sint tempore, culpa in enim a voluptatem nulla. Culpa doloremque totam sunt unde natus ipsum quae, nisi iusto aliquam atque fugiat repellendus facere dolores maiores non quam quis error provident autem perferendis doloribus praesentium nesciunt laudantium velit. Veniam fugiat optio sunt! Nostrum impedit, neque beatae tempora provident obcaecati, reprehenderit unde quia architecto sequi perferendis distinctio! Minus quia animi sunt voluptatum necessitatibus, iure fugiat! Exercitationem debitis suscipit libero, nemo voluptatem animi aspernatur necessitatibus reiciendis officia, odit dolorem. Ut natus assumenda, vero modi officia quasi et accusantium architecto error repudiandae voluptas, tempore quod reprehenderit culpa nemo molestias iste quisquam veritatis qui sunt repellendus dolor totam. Aspernatur possimus temporibus nisi hic quaerat sapiente ab similique impedit ratione inventore modi, sed facilis nihil officiis voluptate. Nulla eveniet quae perferendis quod fugiat quisquam laboriosam! Commodi quidem voluptatem, deleniti optio repellat dignissimos, debitis pariatur quaerat aperiam consequatur adipisci. Qui suscipit velit aut, voluptatem molestias officiis repellat? Excepturi autem est voluptatem, ab nostrum placeat debitis asperiores, aut obcaecati voluptas voluptatibus nesciunt! Neque doloribus provident corporis in consectetur quos fugit quasi necessitatibus dicta aut sed sequi quidem quo, vero, laborum hic accusamus alias repellendus nemo. Quidem voluptates consectetur quia magni deleniti praesentium dolorum, facilis vitae recusandae magnam cum numquam eum similique autem fugit suscipit harum nemo atque quae! Atque provident quia, quae quos amet repudiandae tempore facilis vel eius, fuga harum maxime, animi eveniet! Numquam adipisci tempora a laborum delectus blanditiis!</p>
-        </div>
-      </MediaQuery>
+        <MediaQuery minWidth={768}>
+          <div className="absolute top-0 mt-[-20rem] mr-[-40rem]  overflow-clip  dropClaw right-0 ">
+            <Image alt="" height={1000} width={1400} src={Claw} />
+          </div>
+        </MediaQuery>
 
-      <MediaQuery maxWidth={768}>
-      <div className="w-full bg-[#242424] rounded-md p-3 text-lg w-full tracking-widest">
-        <h1 className="text-3xl">Our Company</h1>
-        <hr className="my-5" />
-        <p  className="	">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente vitae nobis delectus reiciendis officia consequatur et blanditiis? Quaerat, sint ducimus iure officia autem, minima laboriosam maxime totam incidunt saepe adipisci tempora reiciendis exercitationem at esse ipsa fugit deserunt! Fugit recusandae distinctio maiores aut vero a dolore! Amet, voluptatibus omnis quasi ullam perspiciatis nobis eaque inventore nesciunt hic ab aut. Unde laudantium eius temporibus eum, natus deserunt rem sint tempore, culpa in enim a voluptatem nulla. Culpa doloremque totam sunt unde natus ipsum quae, nisi iusto aliquam atque fugiat repellendus facere dolores maiores non quam quis error provident autem perferendis doloribus praesentium nesciunt laudantium velit. Veniam fugiat optio sunt! Nostrum impedit, neque beatae tempora provident obcaecati, reprehenderit unde quia architecto sequi perferendis distinctio! Minus quia animi sunt voluptatum necessitatibus, iure fugiat! Exercitationem debitis suscipit libero, nemo voluptatem animi aspernatur necessitatibus reiciendis officia, odit dolorem. Ut natus assumenda, vero modi officia quasi et accusantium architecto error repudiandae voluptas, tempore quod reprehenderit culpa nemo molestias iste quisquam veritatis qui sunt repellendus dolor totam. Aspernatur possimus temporibus nisi hic quaerat sapiente ab similique impedit ratione inventore modi, sed facilis nihil officiis voluptate. Nulla eveniet quae perferendis quod fugiat quisquam laboriosam! Commodi quidem voluptatem, deleniti optio repellat dignissimos, debitis pariatur quaerat aperiam consequatur adipisci. Qui suscipit velit aut, voluptatem molestias officiis repellat? Excepturi autem est voluptatem, ab nostrum placeat debitis asperiores, aut obcaecati voluptas voluptatibus nesciunt! Neque doloribus provident corporis in consectetur quos fugit quasi necessitatibus dicta aut sed sequi quidem quo, vero, laborum hic accusamus alias repellendus nemo. Quidem voluptates consectetur quia magni deleniti praesentium dolorum, facilis vitae recusandae magnam cum numquam eum similique autem fugit suscipit harum nemo atque quae! Atque provident quia, quae quos amet repudiandae tempore facilis vel eius, fuga harum maxime, animi eveniet! Numquam adipisci tempora a laborum delectus blanditiis!</p>
-        </div>
-      </MediaQuery>
-      
+        {/* Dexstop Header */}
+        <MediaQuery minWidth={768}>
+          <div className="w-full bg-[#242424] rounded-md p-3 text-lg w-10/12 tracking-widest">
+            <h1 className="text-3xl px-1">Our Services</h1>
+            <div className="my-5 border-b-[1px] w-full border-[#444444]" />
+            <p className="text-lg">
+              We are ready to help your digital business become a reality, don't
+              worry about how to start your digital business, we will provide
+              free consultation, mature concepts and friendly prices. Not only
+              digital business, if you already have a business in the real
+              sector, we also provide landing page / company profile creation
+              services, so that your prospective customers are more global, and
+              more widely recognized in the digital era. <br />
+              <br />
+              We Have Many International Clients Who Are Regularly Developing
+              Their Websites, To Be Better Which We Have Fully Entrusted With .
+            </p>
+
+            <div className="my-5 border-b-[1px] w-full border-[#444444]" />
+            <p>
+              We are ready to collaborate with you both with the government and
+              private sector to develop themselves towards the era of digital ,
+              in application development (Softwere Development) / Custom Website
+              / IT Consultant / Company Profile and we will be ready for
+              collaborate From the planning stage to completion, will continue
+              to accompany us with professionals.
+            </p>
+            <br />
+            <br />
+            <p>
+              We are ready to provide a Cash Back Guarantee if what we do not
+              according to the agreed master plan <br />
+              <br /> (Black Wolf Tech Indonesia).
+            </p>
+          </div>
+        </MediaQuery>
+
+        <MediaQuery maxWidth={768}>
+          <div className="w-full bg-[#242424] rounded-md p-3 text-lg w-full tracking-widest">
+            <h1 className="text-3xl px-1">Our Services</h1>
+            <div className="my-5 border-b-[1px] w-full border-[#444444]" />
+            <p className="text-lg ">
+              We are ready to help your digital business become a reality, don't
+              worry about how to start your digital business, we will provide
+              free consultation, mature concepts and friendly prices. Not only
+              digital business, if you already have a business in the real
+              sector, we also provide landing page / company profile creation
+              services, so that your prospective customers are more global, and
+              more widely recognized in the digital era. <br />
+              <br />
+              We Have Many International Clients Who Are Regularly Developing
+              Their Websites, To Be Better Which We Have Fully Entrusted With .
+            </p>{" "}
+            <br />
+            <div className="my-1 border-b-[1px] w-full border-[#444444]" />
+            <br />
+            <p>
+              We are ready to collaborate with you both with the government and
+              private sector to develop themselves towards the era of digital ,
+              in application development (Softwere Development) / Custom Website
+              / IT Consultant / Company Profile and we will be ready for
+              collaborate From the planning stage to completion, will continue
+              to accompany us with professionals.
+            </p>
+            <br />
+            <p>
+              We are ready to provide a Cash Back Guarantee if what we do not
+              according to the agreed master plan <br />
+              <br /> (Black Wolf Tech Indonesia).
+            </p>
+          </div>
+        </MediaQuery>
       </div>
 
       <div className="min-h-[25rem] relative  bg-gradient-to-t from-[#1F1F1F] via-[#646464] to-[#424141a9] text-white pt-[2rem] px-[1.45rem] flex flex-col">
@@ -88,29 +143,61 @@ const Home: NextPage = () => {
           className=" h-[15rem] w-[100%] mt-3 text-black"
           responsive={responsive}
           infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={3000}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         >
           <div className="h-[13rem] border-[8px] border-[#646464] text-stone-200 p-2 justify-center items-center text-center content-center m-2 rounded-md flex flex-col  border-y-0 border-x-0 shadow-lg  bg-[#f5f5f5]">
-            <Image height={80} width={300} src={Ut} />
+            <Image alt="" height={80} width={300} src={Ut} />
           </div>
           <div className="h-[13rem]  border-[8px] border-[#646464]  text-stone-200 p-2 justify-center items-center text-center content-center m-2 rounded-md flex flex-col border-y-0 border-x-0 shadow-lg bg-[#f5f5f5] ">
-            <Image className="rounded-lg" height={180} width={300} src={U} />
+            <Image
+              alt=""
+              className="rounded-lg"
+              height={180}
+              width={300}
+              src={U}
+            />
           </div>
           <div className="h-[13rem] border-[8px] border-[#646464]  text-stone-200 p-2 justify-center items-center text-center content-center m-2 rounded-md flex flex-col  border-y-0 border-x-0 shadow-lg bg-[#f5f5f5] ">
-            <Image className="rounded-lg" height={80} width={300} src={Up} />
+            <Image
+              alt=""
+              className="rounded-lg"
+              height={80}
+              width={300}
+              src={Up}
+            />
           </div>
           <div className="h-[13rem] border-[8px] border-[#646464]  text-stone-200 p-2 justify-center items-center text-center content-center m-2 rounded-md flex flex-col  border-y-0 border-x-0 shadow-lg bg-[#f5f5f5] ">
-            <Image className="rounded-lg" height={150} width={450} src={Ue} />
+            <Image
+              alt=""
+              className="rounded-lg"
+              height={150}
+              width={450}
+              src={Ue}
+            />
           </div>
           <div className="h-[13rem] border-[8px] border-[#646464]  text-stone-200 p-2 justify-center items-center text-center content-center m-2 rounded-md flex flex-col  border-y-0 border-x-0 shadow-lg bg-[#f5f5f5] ">
-            <Image className="rounded-lg" height={130} width={150} src={Ub} />
+            <Image
+              alt=""
+              className="rounded-lg"
+              height={130}
+              width={150}
+              src={Ub}
+            />
           </div>
 
           <div className="h-[13rem] border-[8px] border-[#646464]  text-stone-200 p-2 justify-center items-center text-center content-center m-2 rounded-md flex flex-col  border-y-0 border-x-0 shadow-lg bg-[#f5f5f5] ">
-            <Image height={130} width={450} src={Uo} />
+            <Image alt="" height={130} width={450} src={Uo} />
           </div>
           <div className="h-[13rem] border-[8px] border-[#646464]  text-stone-200 p-2 justify-center items-center text-center content-center m-2 rounded-md flex flex-col  border-y-0 border-x-0 shadow-lg bg-[#f5f5f5]  ">
-            <Image className="rounded-lg" height={130} width={450} src={Uk} />
+            <Image
+              alt=""
+              className="rounded-lg"
+              height={130}
+              width={450}
+              src={Uk}
+            />
           </div>
         </Carousel>
       </div>

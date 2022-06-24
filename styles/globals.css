@@ -6,8 +6,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Kanit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Kanit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -19,44 +19,41 @@ a {
   box-sizing: border-box;
 }
 
-
-.animation-background{
-  animation: myAnim 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal forwards;
+.animation-background {
+  animation: myAnim 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal
+    forwards;
   width: fit-content !important;
   /* margin-left: -10rem !important; */
 }
-.animation-background2{
-
+.animation-background2 {
   margin-left: -4rem !important;
-  animation: myAnim2 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal forwards;
+  animation: myAnim2 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal
+    forwards;
 }
 
 @keyframes myAnim {
-	0% {
-		transform: translateX(0)  ;
-	}
+  0% {
+    transform: translateX(0);
+  }
   50% {
-		transform: translateX(-50px) ;
-	}
-	100% {
-		transform: translateX(0px);
-	}
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 @keyframes myAnim2 {
-	0% {
-		transform: translateX(0)  ;
-	}
+  0% {
+    transform: translateX(0);
+  }
   50% {
-		transform: translateX(50px) ;
-	}
-	100% {
-		transform: translateX(0px);
-	}
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
-
-
-
 
 .animation-backgroundtwo {
   position: fixed !important;
@@ -66,7 +63,6 @@ a {
 
   min-width: max-content !important;
 }
-
 
 .animation-backgroundone {
   position: fixed !important;
@@ -78,21 +74,26 @@ a {
 }
 .neonText {
   color: #fff;
-  text-shadow:
-  0 0 7px #0f0d0d, -1px 1px 10px #fff, 0 0 21px #181818, 0 0 42px #1f1f1f, 0 0 82px #151515, 0 0 92px #a1a1a1, 0 0 102px #080808, 0 0 151px #d7a85f ;
+  text-shadow: 0 0 7px #0f0d0d, -1px 1px 10px #fff, 0 0 21px #181818,
+    0 0 42px #1f1f1f, 0 0 82px #151515, 0 0 92px #a1a1a1, 0 0 102px #080808,
+    0 0 151px #d7a85f;
 }
-
-
 
 .dropClaw {
-  
-  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(12px) opacity(0.8);
-  
+  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(12px)
+    opacity(0.8);
 }
 
-
 .dropLogo {
-  
-  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(0px) ;
-  
+  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(0px);
+}
+
+.dropLogoCollection {
+  filter: drop-shadow(8px 3px 6px #cdcdcd79);
+}
+
+.img30 img {
+  max-height: 5rem;
+  min-height: 5rem;
+  min-width: fit-content;
 }
