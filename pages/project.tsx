@@ -30,8 +30,9 @@ const project: NextPage = () => {
   };
 
   return (
+    
     <Layout pageTitle="colelction">
-      <div className="flex flex-col bg-gradient-to-br from-[#1F1F1F] via-[#1F1F1F] to-[#080707] w-full h-full min-h-[100vh]  justify-center  items-center text-stone-200">
+      <div className="flex flex-col w-full h-full min-h-[100vh]  justify-center  items-center text-stone-200">
         <h1 className="text-4xl text-[#fff7] text-center p-4">
           - Comming Soon -{" "}
         </h1>
