@@ -97,3 +97,20 @@ a {
   min-height: 5rem;
   min-width: fit-content;
 }
+
+.bagas img {
+  position: fixed !important;
+  left: 0px;
+  z-index: -1;
+  min-height: 100vh !important;
+  min-width: 60vw !important;
+  margin-bottom: -2rem !important;
+  margin-top: 4rem !important;
+}
+
+.bagas2 {
+  min-width: 0px !important;
+  max-width: none !important;
+  min-height: 0px !important;
+  max-height: none !important;
+}
