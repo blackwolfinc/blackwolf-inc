@@ -34,10 +34,10 @@ const aboutus: NextPage = () => {
   return (
     <>
       <Layout pageTitle="colelction">
-        <div className="bagas">
+        {/* <div className="bagas">
           <Image className="bagas2" src={bagas} />
-        </div>
-        <div className="flex flex-col  w-full h-full min-h-[100vh]  justify-center  items-center text-stone-200">
+        </div> */}
+        <div className="flex flex-col  w-full h-full min-h-[100vh]  justify-center  items-center text-stone-200 teamwolf2">
           <h1 className="text-4xl text-[#fff7] text-center p-4">
             {" "}
             Kegagalan terbesar adalah ketika tidak berani mencoba{" "}

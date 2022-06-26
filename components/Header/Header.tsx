@@ -37,9 +37,9 @@ export const Header = () => {
           </div>
         </div>
         {Header ? (
-          <div className=" border-[#cacaca] text-stone-200  bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#0807079f]">
+          <div className=" border-[#cacaca] text-stone-200  bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#0807079f] ">
             <div className="flex flex-col fixed mt-20 justify-center text-center  bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#080707] w-full h-full z-50">
-              <div className="my-3  hover:scale-125 hover:ml-4 duration-100	min-w-max">
+              <div className="my-3  hover:scale-125 hover:ml-4 duration-100	min-w-max ">
                 {" "}
                 <Link href={"/"}>Homepage</Link>
               </div>

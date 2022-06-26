@@ -114,3 +114,49 @@ a {
   min-height: 0px !important;
   max-height: none !important;
 }
+
+.buttonAtas {
+  position: relative;
+}
+
+.buttonAtas:hover {
+  transform: scale(1.1);
+  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.buttonAtas:hover:after {
+  content: "";
+  width: 291px;
+  height: 300px;
+  transform: scale(0.4);
+  background: url("../public/assets/img/claw.png") no-repeat;
+  top: -8rem;
+  left: 1rem;
+  filter: opacity(0.7);
+  position: absolute;
+  display: inline-block;
+}
+
+.bgOur {
+  background: rgba(0, 0, 0, 0.329) url("../public/assets/img/man.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.75;
+}
+
+.teamwolf {
+  background: url("../public/assets/img/teamwolf.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  filter: grayscale(1);
+}
+
+.teamwolf2 {
+  background: url("../public/assets/img/wolflamp.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  opacity: 0.8;
+  filter: grayscale(1);
+}

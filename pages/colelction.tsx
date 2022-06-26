@@ -160,10 +160,10 @@ const colelction: NextPage = () => {
     <>
       <Layout pageTitle="colelction">
         <MediaQuery minWidth={768}>
-          <div className="relative  items-center pt-[20%] pb-[10%] mt-0  bg-gradient-to-t from-[#1F1F1F] via-[#646464] to-[#424141a9] text-white px-[1.45rem] flex flex-col">
+          <div className="relative  items-center pt-[20%] pb-[10%] mt-0   text-white px-[1.45rem] flex flex-col">
             <h1 className="text-3xl"> Our Client Webiste</h1>
             <Carousel
-              className=" h-[25rem] w-[100%] mt-3 text-black"
+              className=" h-[25rem] w-[100%] mt-3 text-black "
               responsive={responsive}
               infinite={true}
               swipeable={true}
