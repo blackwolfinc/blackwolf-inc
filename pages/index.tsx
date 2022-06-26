@@ -131,7 +131,7 @@ const Home: NextPage = () => {
             <h1 className="text-3xl px-1">Our Services</h1>
             <div className="my-5 border-b-[1px] w-full border-[#444444]" />
             <p className="text-lg ">
-              We are ready to help your digital business become a reality, don't
+              We are ready to help your digital business become a reality, dont
               worry about how to start your digital business, we will provide
               free consultation, mature concepts and friendly prices. Not only
               digital business, if you already have a business in the real

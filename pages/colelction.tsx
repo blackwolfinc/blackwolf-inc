@@ -49,7 +49,7 @@ const colelction: NextPage = () => {
           <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
             <div className="dropLogoCollection">
               {" "}
-              <Image src={Ut} />
+              <Image alt="" src={Ut} />
             </div>
             <h1 className="text-2xl  mt-3">Ultra Telecome (USA)</h1>
             <div className="flex space-x-4 justify-center mt-2">
@@ -65,7 +65,7 @@ const colelction: NextPage = () => {
           </div>
           <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
             <div className="dropLogoCollection">
-              <Image src={Uo} />
+              <Image alt="" src={Uo} />
             </div>
             <h1 className="text-2xl mt-3">Ultra One LLC (USA)</h1>
             <div className="flex space-x-4 justify-center mt-2">
@@ -81,7 +81,7 @@ const colelction: NextPage = () => {
           </div>
           {/* Logisfleet  */}
           <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
-            <Image src={Ue} />
+            <Image alt="" src={Ue} />
             <h1 className="text-2xl  mt-3">LogisFleet Pte. Ltd. (SGP)</h1>
             <div className="flex flex-col justify-center mt-2">
               <Link
@@ -103,7 +103,7 @@ const colelction: NextPage = () => {
             </div>
           </div>
           <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
-            <Image src={U} />
+            <Image alt="" src={U} />
             <h1 className="text-2xl  mt-3">VoxTeneo . (BLG)</h1>
             <div className="flex space-x-4 justify-center mt-2">
               <Link
@@ -120,7 +120,7 @@ const colelction: NextPage = () => {
           <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
             <div className="dropLogoCollection">
               {" "}
-              <Image src={Uk} />
+              <Image alt="" src={Uk} />
             </div>
             <h1 className="text-2xl  mt-3">Klinik Arrisalah. (IND)</h1>
             <div className="flex space-x-4 justify-center mt-2">
@@ -138,7 +138,7 @@ const colelction: NextPage = () => {
           <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
             <div className="dropLogoCollection">
               {" "}
-              <Image src={Up} />
+              <Image alt="" src={Up} />
             </div>
             <h1 className="text-2xl  mt-3">Pasar jasa . (IND)</h1>
             <div className="flex space-x-4 justify-center mt-2">

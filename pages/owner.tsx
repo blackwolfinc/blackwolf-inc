@@ -8,7 +8,7 @@ const colelction: NextPage = () => {
   return (
     <Layout pageTitle="owner">
       <div className="flex flex-col  w-full h-full min-h-[100vh]  justify-center  items-center">
-      <Image className="bg-red" src={image}  height={600} width={350}/>
+        <Image alt="" className="bg-red" src={image} height={600} width={350} />
       </div>
     </Layout>
   );
