@@ -85,7 +85,9 @@ a {
 }
 
 .dropLogo {
-  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(0px);
+  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(0px) invert(0);
+}
+.dropLogo img {
 }
 
 .dropLogoCollection {

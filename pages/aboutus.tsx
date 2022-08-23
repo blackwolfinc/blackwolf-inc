@@ -4,7 +4,7 @@ import React from "react";
 import { Footer2 } from "../components/Footer2/Footer";
 import { Layout } from "../components/layout/Layout";
 import image from "../public/assets/img/wolf3.png";
-import bagas from "../public/assets/img/bagas.png";
+// import bagas from "../public/assets/img/bagas.png";
 
 const aboutus: NextPage = () => {
   const reanderCard = () => {
@@ -16,7 +16,6 @@ const aboutus: NextPage = () => {
           <div className="flex p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200">
             <h1 className="text-2xl">This Title </h1>
             <Image alt="" src={image} />
-
             <div className="flex space-x-4 justify-center mt-2">
               <button className=" border-2 border-[#676767]  min-w-[5rem] p-3 rounded-lg">
                 Submit{" "}
