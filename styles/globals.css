@@ -139,7 +139,7 @@ a {
 }
 
 .bgOur {
-  background: rgba(0, 0, 0, 0.329) url("../public/assets/img/man.jpg") no-repeat;
+  background: rgba(0, 0, 0, 0.329);
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.75;
@@ -151,7 +151,7 @@ a {
   background-size: cover;
   background-position: center;
   opacity: 0.9;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 .teamwolf2 {
@@ -161,4 +161,23 @@ a {
   background-position: right;
   opacity: 0.8;
   filter: grayscale(1);
+}
+
+.LitterWitch div.sc-AykKE.hkDljt canvas {
+  display: flex;
+  position: absolute !important;
+  margin-left: 28rem !important;
+  margin-top: 3rem !important;
+  left: 0px !important;
+  /* display: none !important; */
+}
+/* <div class="sc-AykKE hkDljt"><canvas style="display: block; touch-action: none;"></canvas><canvas style="display: block; touch-action: none;"></canvas></div> */
+
+div.sc-AykKI.fnfSHN canvas {
+  display: flex;
+  position: absolute !important;
+  margin-left: -22rem !important;
+  margin-top: -6rem !important;
+  left: 0px !important;
+  /* display: none !important; */
 }

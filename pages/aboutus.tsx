@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
 import { Footer2 } from "../components/Footer2/Footer";

@@ -26,9 +26,19 @@ import dynamic from "next/dynamic";
 // import Link from "next/link";
 
 import ReactPlayer from "react-player";
+import { AnimatePresence } from "framer-motion";
 
 const Home: NextPage = () => {
   const MediaQuery = dynamic(() => import("react-responsive"), { ssr: false });
+  const LitterWitch = dynamic(() => import("../components/LitterWitch"), {
+    ssr: false,
+    loading: () => <div>loading...</div>,
+  });
+  const SoftwereDev = dynamic(() => import("../components/SoftwereDev"), {
+    ssr: false,
+    loading: () => <div>loading...</div>,
+  });
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -61,6 +71,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </Layout>
+
+      {/* <AnimatePresence exitBeforeEnter initial={true}></AnimatePresence> */}
       <MediaQuery minWidth={768}>
         <div className="flex justify-center self-center items-center  absolute mt-[-2rem] w-full">
           <div className="flex justify-between w-8/12 z-50">
@@ -89,7 +101,8 @@ const Home: NextPage = () => {
         {/* Dexstop Header */}
         <MediaQuery minWidth={768}>
           <div className="w-full bgOur rounded-md p-3 mt-20 text-lg w-10/12 tracking-widest ">
-            <div className="ml-[35%] mt-3 mb-4 bg-[#202326] bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] p-4 rounded-md">
+            <LitterWitch />
+            <div className="mr-[35%] mt-3 mb-4 bg-[#202326] bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] p-4 rounded-md">
               <h1 className="text-3xl px-1 z-10">Our Services</h1>
               <div className="my-5 border-b-[1px] w-full border-[#444444] z-10" />
               <p className="text-lg z-10">
@@ -268,7 +281,7 @@ const Home: NextPage = () => {
               Mary
             </h1>
             <p className="px-4">
-              It's an honor to collaborate with a professional developer, who
+              It s an honor to collaborate with a professional developer, who
               helps me provide solutions for my website development
             </p>
           </div>
@@ -294,7 +307,8 @@ const Home: NextPage = () => {
         {" "}
         <div className="min-h-[45rem] relative teamwolf  mt-[10rem] pb-10 bg-gradient-to-t from-[#1F1F1F] via-[#646464] to-[#424141a9] text-white pt-[2rem] px-[1.45rem] flex flex-row justify-between">
           <div className="w-7/12 flex text-center justify-center bg-[#111111cc] items-center content-center">
-            <h1 className="text-3xl text buttonAtas"> Softwere Development</h1>
+            <h1 className="self-start mt-[3rem]">Softwere Development</h1>
+            <SoftwereDev />
           </div>
           <div className="w-5/12">
             <div className=" bg-[#111111e3] p-4 ">
