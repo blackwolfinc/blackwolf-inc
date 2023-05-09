@@ -57,7 +57,7 @@ const LitterWitch: React.FC = () => {
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale + 0.6,
-        scale + -0.2,
+        scale + -0.7,
         -scale / 2,
         0.001,
         50000

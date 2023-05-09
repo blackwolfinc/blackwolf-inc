@@ -91,7 +91,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </MediaQuery>
-      <div className="min-h-[45rem] relative pb-[6rem]    overflow-clip  bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] text-white pt-[2rem] px-[1.45rem] flex flex-row justify-around space-x-4 pb-8">
+      <div className="min-h-[45rem] relative     overflow-clip  bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] text-white pt-[2rem] flex flex-row justify-around ">
         <MediaQuery minWidth={768}>
           <div className="absolute top-0 mt-[-20rem] mr-[-40rem]  overflow-clip  dropClaw right-0 ">
             <Image alt="" height={1000} width={1400} src={Claw} />
@@ -100,47 +100,13 @@ const Home: NextPage = () => {
 
         {/* Dexstop Header */}
         <MediaQuery minWidth={768}>
-          <div className="w-full bgOur rounded-md p-3 mt-20 text-lg w-10/12 tracking-widest ">
+          <div className="w-full bgOur rounded-md mt-[20rem] text-lg tracking-widest ">
             <LitterWitch />
-            <div className="mr-[35%] mt-3 mb-4 bg-[#202326] bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] p-4 rounded-md">
-              <h1 className="text-3xl px-1 z-10">Our Services</h1>
-              <div className="my-5 border-b-[1px] w-full border-[#444444] z-10" />
-              <p className="text-lg z-10">
-                We are ready to help your digital business become a reality,
-                dont worry about how to start your digital business, we will
-                provide free consultation, mature concepts and friendly prices.
-                Not only digital business, if you already have a business in the
-                real sector, we also provide landing page / company profile
-                creation services, so that your prospective customers are more
-                global, and more widely recognized in the digital era. <br />
-                <br />
-                We Have Many International Clients Who Are Regularly Developing
-                Their Websites, To Be Better Which We Have Fully Entrusted With
-                .
-              </p>
-
-              <div className="my-5 border-b-[1px] w-full border-[#444444] z-10" />
-              <p>
-                We are ready to collaborate with you both with the government
-                and private sector to develop themselves towards the era of
-                digital , in application development (Softwere Development) /
-                Custom Website / IT Consultant / Company Profile and we will be
-                ready for collaborate From the planning stage to completion,
-                will continue to accompany us with professionals.
-              </p>
-              <br />
-              <br />
-              <p>
-                We are ready to provide a Cash Back Guarantee if what we do not
-                according to the agreed master plan <br />
-                <br /> (Black Wolf Tech Indonesia).
-              </p>
-            </div>
           </div>
         </MediaQuery>
 
         <MediaQuery maxWidth={768}>
-          <div className="w-full bg-[#242424] rounded-md p-3 text-lg w-full tracking-widest">
+          <div className="w-full bg-[#242424] rounded-md p-3 text-lg tracking-widest">
             <h1 className="text-3xl px-1">Our Services</h1>
             <div className="my-5 border-b-[1px] w-full border-[#444444]" />
             <p className="text-lg ">

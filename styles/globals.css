@@ -69,8 +69,9 @@ a {
   bottom: 0px;
   height: 50% !important;
   width: auto !important;
-
-  min-width: max-content !important;
+  min-width: -webkit-max-content !important;
+  min-width: -moz-max-content !important;
+  min-width: 110vw !important;
 }
 .neonText {
   color: #fff;
@@ -163,21 +164,5 @@ a {
   filter: grayscale(1);
 }
 
-.LitterWitch div.sc-AykKE.hkDljt canvas {
-  display: flex;
-  position: absolute !important;
-  margin-left: 28rem !important;
-  margin-top: 3rem !important;
-  left: 0px !important;
-  /* display: none !important; */
-}
-/* <div class="sc-AykKE hkDljt"><canvas style="display: block; touch-action: none;"></canvas><canvas style="display: block; touch-action: none;"></canvas></div> */
 
-div.sc-AykKI.fnfSHN canvas {
-  display: flex;
-  position: absolute !important;
-  margin-left: -22rem !important;
-  margin-top: -6rem !important;
-  left: 0px !important;
-  /* display: none !important; */
-}
+
