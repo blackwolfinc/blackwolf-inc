@@ -12,7 +12,7 @@ import Up from "../public/assets/img/Up.png";
 import Uk from "../public/assets/img/Uk.png";
 import Ub from "../public/assets/img/Ub.png";
 import Claw from "../public/assets/img/claw.png";
-import Agile from "../public/assets/img/agile.jpg";
+// import Agile from "../public/assets/img/agile.jpg";
 
 import Man from "../public/assets/client/jo.png";
 import Malik from "../public/assets/client/malik.png";
@@ -27,6 +27,7 @@ import dynamic from "next/dynamic";
 
 import ReactPlayer from "react-player";
 import { AnimatePresence } from "framer-motion";
+import { OpenAnimation } from "../components/OpenAnimation/OpenAnimation";
 
 const Home: NextPage = () => {
   const MediaQuery = dynamic(() => import("react-responsive"), { ssr: false });
@@ -61,7 +62,8 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <Layout pageTitle="Homepage">
+      <OpenAnimation />
+      <Layout pageTitle="Jasa Pembuatan Website & Aplikasi">
         <div className="flex flex-col w-full h-full min-h-[100vh] relative  justify-center  items-center  overflow-x-clip">
           <div className="mt-[-2rem] flex justify-center z-30 content-center self-center items-center dropLogo ">
             <div className=" absolute right-0 top-0 opacity-70">
@@ -73,25 +75,8 @@ const Home: NextPage = () => {
       </Layout>
 
       {/* <AnimatePresence exitBeforeEnter initial={true}></AnimatePresence> */}
-      <MediaQuery minWidth={768}>
-        <div className="flex justify-center self-center items-center  absolute mt-[-2rem] w-full">
-          <div className="flex justify-between w-8/12 z-50">
-            <button className="p-4  bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]  buttonAtas  rounded-md border-[1px] border-[#b2b1b1] w-52 text-stone-200">
-              Softwere Development
-            </button>
-            <button className="p-4  bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]   buttonAtas rounded-md border-[1px] w-52 border-[#b2b1b1] text-stone-200">
-              IT Consultant
-            </button>
-            <button className="p-4  bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]   buttonAtas rounded-md border-[1px] w-52 border-[#b2b1b1] text-stone-200">
-              Company Profile
-            </button>
-            <button className="p-4  bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]   buttonAtas rounded-md border-[1px] w-52 border-[#b2b1b1] text-stone-200">
-              Custom Website
-            </button>
-          </div>
-        </div>
-      </MediaQuery>
-      <div className="min-h-[45rem] relative     overflow-clip  bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] text-white pt-[2rem] flex flex-row justify-around ">
+
+      <div className="min-h-[58rem] relative overflow-clip  bg-gradient-to-b from-[#1b1b1b11] via-[#424141a9] to-[#646464] text-white pt-[2rem] flex flex-row justify-around ">
         <MediaQuery minWidth={768}>
           <div className="absolute top-0 mt-[-20rem] mr-[-40rem]  overflow-clip  dropClaw right-0 ">
             <Image alt="" height={1000} width={1400} src={Claw} />
@@ -100,9 +85,33 @@ const Home: NextPage = () => {
 
         {/* Dexstop Header */}
         <MediaQuery minWidth={768}>
+          <h1 className="absolute font-extrabold text-[70px] capitalize text-[#1b1b1b] self-start ml-[-55vw] mt-[4rem] bg-[#1b1b1b11] px-8 rounded-[12px]">
+            our services
+          </h1>
           <div className="w-full bgOur rounded-md mt-[20rem] text-lg tracking-widest ">
             <LitterWitch />
           </div>
+          <MediaQuery minWidth={768}>
+            <div className="flex justify-center self-center items-center  absolute mb-[-30rem] w-full">
+              <div className="flex justify-between w-10/12 z-50 space-x-2">
+                <button className="p-4 font-extrabold bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]  buttonAtas  h-[5rem] rounded-md border-[1px] border-[#b2b1b1] w-72 text-stone-200 hover:text-orange-300">
+                  <span> Company Website </span>
+                </button>
+                <button className="p-4   bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]   buttonAtas rounded-md border-[1px] w-72 border-[#b2b1b1] text-stone-200 hover:text-orange-300">
+                  <span> Online Store</span>
+                </button>
+                <button className="p-4  font-extrabold bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]   buttonAtas rounded-md border-[1px] w-72 border-[#b2b1b1] text-stone-200 hover:text-orange-300">
+                  <span> Softwere Development</span>
+                </button>
+                <button className="p-4 font-extrabold  bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]   buttonAtas rounded-md border-[1px] w-72 border-[#b2b1b1] text-stone-200 hover:text-orange-300">
+                  <span>Marketing Website </span>
+                </button>
+                <button className="p-4 font-extrabold  bg-gradient-to-b from-[#1b1b1b] via-[#424141] to-[#646464]   buttonAtas rounded-md border-[1px] w-72 border-[#b2b1b1] text-stone-200 hover:text-orange-300">
+                  <span> Custom Website</span>
+                </button>
+              </div>
+            </div>
+          </MediaQuery>
         </MediaQuery>
 
         <MediaQuery maxWidth={768}>
@@ -269,56 +278,6 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <MediaQuery minWidth={768}>
-        {" "}
-        <div className="min-h-[45rem] relative teamwolf  mt-[10rem] pb-10 bg-gradient-to-t from-[#1F1F1F] via-[#646464] to-[#424141a9] text-white pt-[2rem] px-[1.45rem] flex flex-row justify-between">
-          <div className="w-7/12 flex text-center justify-center bg-[#111111cc] items-center content-center">
-            <h1 className="self-start mt-[3rem]">Softwere Development</h1>
-            <SoftwereDev />
-          </div>
-          <div className="w-5/12">
-            <div className=" bg-[#111111e3] p-4 ">
-              <p className="flex flex-col">
-                We are highly dedicated to helping solve Professional technical
-                and non-technical problems, In terms of Providing the best
-                Solutions and the best results in development of the application
-                you want, we will accompany you from the planning stage to
-                delivery professional application,
-                <br />
-                <br />
-                The application development process is carried out using the
-                Agile Method, and User (you) will fully participate in
-                monitoring the process application development, we will prepare
-                the design , algorithms and best solutions to the needs your
-                application, you can add Customization features to your needs
-                which will later be very helpful when in use.
-                <br />
-                <br />
-                The fastest application development process is 1 month because
-                we maintain quality and client satisfaction Our work performance
-                <br />
-                <br />
-                Steps to be taken when we make a application
-                <br />
-                <br />
-                <Image alt="" height={500} width={1000} src={Agile} />
-                <ul className="mt-4 space-y-2">
-                  <li>1. Early Stages of Planning</li>
-                  <li>2. Design & Material Collection Stage</li>
-                  <li>3. Application Flow Planning Stage </li>
-                  <li>4. Mockup Implementation Stage </li>
-                  <li>5. T Development Stage By Developer </li>
-                  <li>6. Show on 70% stage to be tried and revised by users</li>
-                  <li>7. Revision stage by Team Developer </li>
-                  <li>8. 100% Show and Submission Stage </li>
-                </ul>
-                <br />
-                This stage can be adjusted to the needs of the Client / User.
-              </p>
-            </div>
-          </div>
-        </div>
-      </MediaQuery>
       <Footer2 />
     </div>
   );

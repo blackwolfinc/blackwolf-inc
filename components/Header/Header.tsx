@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export const Header = () => {
   const MediaQuery = dynamic(() => import("react-responsive"), { ssr: false });
-  const [Header, setHeader] = useState(false);
+  const [Header, setHeader] = useState(true);
 
   return (
     <>
