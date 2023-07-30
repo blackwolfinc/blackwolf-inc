@@ -248,7 +248,7 @@ a {
 }
 
 .teamwolf {
-  background: url("../public/assets/img/teamwolf.jpg") no-repeat;
+  /* background: url("../public/assets/img/teamwolf.jpg") no-repeat; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
