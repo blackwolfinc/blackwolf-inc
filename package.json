@@ -8,19 +8,26 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "setup-css": "npx tailwindcss -i ./styles/globals.css -o ./dist/output.css --watch",
-    "zip": "zip -r build.zip next.config.js next-env.d.ts package.json pages server.js styles tsconfig.json yarn.lock .next package-lock.json tailwind.config.js  postcss.config.js"
+    "setup": "zip -r build.zip next.config.js next-env.d.ts package.json pages server.js styles tsconfig.json yarn.lock .next package-lock.json tailwind.config.js  postcss.config.js public "
   },
   "dependencies": {
+    "framer-motion": "5.0.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-multi-carousel": "^2.8.1",
-    "react-responsive": "^9.0.0-beta.8"
+    "react-player": "^2.10.1",
+    "react-responsive": "^9.0.0-beta.8",
+    "sharp": "^0.32.1",
+    "styled-components": "5.0.0",
+    "three": "0.134.0"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
+    "@types/styled-components": "^5.1.26",
+    "@types/three": "^0.151.0",
     "autoprefixer": "^10.4.7",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",

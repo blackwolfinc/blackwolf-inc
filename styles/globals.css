@@ -19,6 +19,101 @@ a {
   box-sizing: border-box;
 }
 
+@keyframes AnimationTop {
+  0% {
+    transform: translateX(0);
+   
+  }
+  60%{
+   
+    transform: translateX(0);
+    /* border-bottom: 8px solid rgb(241, 178, 84);
+    border-right: 8px solid rgb(241, 178, 84); */
+  }
+  80%{
+    opacity: 1;
+     border: 0px solid rgb(30, 30, 30);
+  }
+  100% {
+    transform: translateX(-50vw)  ;
+    opacity: 0;
+    border-bottom: 20px solid rgb(30, 30, 30);
+    border-right: 20px solid rgb(30, 30, 30);
+  }
+ 
+}
+
+@keyframes AnimationBottom {
+  0% {
+    transform: translateX(0);
+
+  }
+  60%{
+    transform: translateX(0);
+    /* border-top: 8px solid rgb(241, 178, 84);
+    border-left: 8px solid rgb(241, 178, 84); */
+  }
+  80%{
+    opacity: 1;
+    border: 0px solid rgb(30, 30, 30);
+
+  }
+  100% {
+    transform: translateX(50vw)   ;
+    opacity: 0;
+    border-top: 20px solid rgb(30, 30, 30);
+    border-left: 20px solid rgb(30, 30, 30);
+  }
+ 
+}
+
+@keyframes AnimationCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(0) scale(10) rotate(45deg);
+  }
+  60%{
+    transform: translateX(0) scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+  70%{
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+
+  }
+ 
+}
+
+
+.animationOpenTop {
+  background-color: #1f1f1f;
+
+
+  animation: AnimationTop 4s cubic-bezier(0.37, 0, 0.63, 1) 0s   normal
+}
+
+.animationOpenBottom {
+ 
+  background-color: #1f1f1f;
+  animation: AnimationBottom  4s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal
+
+}
+
+.animateOpenCenter {
+  /* border: 8px solid rgb(241, 178, 84); */
+  color:  rgb(241, 178, 84);
+  font-weight: 700;
+  font-size: 60px;
+  background: url("../public/assets/img/claw.png") no-repeat;
+  /* background-color: #1f1f1f; */
+  animation: AnimationCenter  4s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal
+
+}
+
+
 .animation-background {
   animation: myAnim 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal
     forwards;
@@ -69,8 +164,9 @@ a {
   bottom: 0px;
   height: 50% !important;
   width: auto !important;
-
-  min-width: max-content !important;
+  min-width: -webkit-max-content !important;
+  min-width: -moz-max-content !important;
+  min-width: 110vw !important;
 }
 .neonText {
   color: #fff;
@@ -85,7 +181,9 @@ a {
 }
 
 .dropLogo {
-  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(0px);
+  filter: drop-shadow(2px 4px 6px #424141a9) brightness(75%) blur(0px) invert(0);
+}
+.dropLogo img {
 }
 
 .dropLogoCollection {
@@ -97,3 +195,72 @@ a {
   min-height: 5rem;
   min-width: fit-content;
 }
+
+.bagas img {
+  position: fixed !important;
+  left: 0px;
+  z-index: -1;
+  min-height: 100vh !important;
+  min-width: 60vw !important;
+  margin-bottom: -2rem !important;
+  margin-top: 4rem !important;
+}
+
+.bagas2 {
+  min-width: 0px !important;
+  max-width: none !important;
+  min-height: 0px !important;
+  max-height: none !important;
+}
+
+.buttonAtas {
+  position: relative;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.buttonAtas:hover {
+  transform: scale(1.1);
+  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.buttonAtas:hover:after {
+  content: "";
+  width: 291px;
+  height: 300px;
+  transform: scale(0.4);
+  background: url("../public/assets/img/claw.png") no-repeat;
+  top: -8rem;
+  left: 6rem;
+  filter: opacity(0.7);
+  position: absolute;
+  display: inline-block;
+}
+
+.bgOur {
+  background: rgba(0, 0, 0, 0.329);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.75;
+}
+
+.teamwolf {
+  background: url("../public/assets/img/teamwolf.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  /* filter: grayscale(1); */
+}
+
+.teamwolf2 {
+  background: url("../public/assets/img/wolflamp.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  opacity: 0.8;
+  filter: grayscale(1);
+}
+
+
+
