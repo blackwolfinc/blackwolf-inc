@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export const Header = () => {
   const MediaQuery = dynamic(() => import("react-responsive"), { ssr: false });
-  const [Header, setHeader] = useState(true);
+  const [Header, setHeader] = useState(false);
 
   return (
     <>
@@ -39,15 +39,15 @@ export const Header = () => {
         {Header ? (
           <div className=" border-[#cacaca] text-stone-200  bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#0807079f] ">
             <div className="flex flex-col fixed mt-20 justify-center text-center  bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#080707] w-full h-full z-50">
-              <div className="my-3  hover:scale-125 hover:ml-4 duration-100	min-w-max ">
+              <div className="my-3  hover:scale-125 hover:ml-4 duration-100	min-w-max font-bold text-2xl">
                 {" "}
                 <Link href={"/"}>Homepage</Link>
               </div>
-              <div className="my-3 hover:scale-125 hover:ml-4 duration-100 min-w-max">
+              <div className="my-3 hover:scale-125 hover:ml-4 duration-100 min-w-max font-bold text-2xl">
                 {" "}
                 <Link href={"/colelction"}>Colection</Link>
               </div>
-              <div className="my-3 hover:scale-125 hover:ml-4 duration-100 min-w-max">
+              <div className="my-3 hover:scale-125 hover:ml-4 duration-100 min-w-max font-bold text-2xl">
                 {" "}
                 <Link href={"/aboutus"}>About Us</Link>
               </div>

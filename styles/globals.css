@@ -21,12 +21,12 @@ a {
 
 @keyframes AnimationTop {
   0% {
-    transform: translateX(0);
-   
+    transform: translateX(0) rotate(180deg) ;
+
   }
   60%{
    
-    transform: translateX(0);
+    transform: translateX(0) rotate(180deg);
     /* border-bottom: 8px solid rgb(241, 178, 84);
     border-right: 8px solid rgb(241, 178, 84); */
   }
@@ -35,21 +35,22 @@ a {
      border: 0px solid rgb(30, 30, 30);
   }
   100% {
-    transform: translateX(-50vw)  ;
+    transform: translateX(-50vw) rotate(180deg)  ;
     opacity: 0;
     border-bottom: 20px solid rgb(30, 30, 30);
     border-right: 20px solid rgb(30, 30, 30);
+
   }
  
 }
 
 @keyframes AnimationBottom {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) rotateX(180deg);
 
   }
   60%{
-    transform: translateX(0);
+    transform: translateX(0) rotateX(180deg);
     /* border-top: 8px solid rgb(241, 178, 84);
     border-left: 8px solid rgb(241, 178, 84); */
   }
@@ -59,10 +60,11 @@ a {
 
   }
   100% {
-    transform: translateX(50vw)   ;
+    transform: translateX(50vw) rotateX(180deg)  ;
     opacity: 0;
     border-top: 20px solid rgb(30, 30, 30);
     border-left: 20px solid rgb(30, 30, 30);
+
   }
  
 }
@@ -89,17 +91,18 @@ a {
 
 
 .animationOpenTop {
-  background-color: #1f1f1f;
+  background: url("../public/assets/img/Background.jpg");
+  filter: grayscale(1) brightness(0.4);
+  animation: AnimationTop 4s cubic-bezier(0.37, 0, 0.63, 1) 0s   normal ;
+  background-size: cover;
 
-
-  animation: AnimationTop 4s cubic-bezier(0.37, 0, 0.63, 1) 0s   normal
 }
 
 .animationOpenBottom {
- 
-  background-color: #1f1f1f;
-  animation: AnimationBottom  4s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal
-
+  background: url("../public/assets/img/Background.jpg");
+  filter: grayscale(1) brightness(0.4);
+  animation: AnimationBottom  4s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal ;
+  background-size: cover;
 }
 
 .animateOpenCenter {
