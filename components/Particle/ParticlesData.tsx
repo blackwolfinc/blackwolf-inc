@@ -98,7 +98,7 @@ detectRetina: true,
 }
 
 return (
-      <Particles className={"absolute h-[94svh] w-full " }   options={particlesOptions} />
+      <Particles className={"absolute h-[94svh] w-full " }  init={particlesInit}  options={particlesOptions} />
 );
 
 }
