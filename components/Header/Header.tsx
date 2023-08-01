@@ -11,9 +11,8 @@ export const Header = () => {
     <>
       {/* Mobile Header  */}
       <MediaQuery maxWidth={768}>
-        <div className="p-4 bg-transparent flex z-50 w-full fixed  flex  justify-between items-center text-stone-200  bg-gradient-to-br from-[#323232] via-[#4b4b4b] to-[#0807079f] tracking-widest">
-          <h1 className="text-2xl">BWT.ID</h1>
-
+        <div className="p-4 bg-transparent flex z-50 w-full fixed  justify-between items-center text-stone-200  bg-gradient-to-br from-[#323232] via-[#4b4b4b7a] to-[#08070700] tracking-widest">
+          <h1 className="text-2xl font-extrabold ">BWT.ID</h1>
           <div
             onClick={() => {
               setHeader(!Header);
@@ -38,7 +37,7 @@ export const Header = () => {
         </div>
         {Header ? (
           <div className=" border-[#cacaca] text-stone-200  bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#0807079f] ">
-            <div className="flex flex-col fixed mt-20 justify-center text-center  bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#080707] w-full h-full z-50">
+            <div className="flex flex-col fixed mt-[4.6rem] justify-center text-center   bg-gradient-to-br from-[#323232] via-[#4b4b4bfb] to-[#080707] w-full h-full z-50">
               <div className="my-3  hover:scale-125 hover:ml-4 duration-100	min-w-max font-bold text-2xl">
                 {" "}
                 <Link href={"/"}>Homepage</Link>

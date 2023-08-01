@@ -3,11 +3,8 @@ import React from 'react'
 import Gif from "../../public/assets/img/png/barbatos.png"
 export const OurProduct = () => {
   return (
-    <div className='flex justify-center h-full bg-[#FAFAFA] p-4 relative'>
-
-   
-        <Image width={600} height={500} className='w-[10rem] ' alt='' src={Gif}></Image>
-
+    <div className='flex justify-between h-full bg-[#e2e2e2] p-4 relative'>
+      
 
     </div>
   )
