@@ -1,12 +1,12 @@
 {
+  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
   "/404": "pages/404.html",
-  "/_document": "pages/_document.js",
   "/aboutus": "pages/aboutus.html",
-  "/_error": "pages/_error.js",
-  "/colelction": "pages/colelction.html",
-  "/owner": "pages/owner.html",
   "/api/hello": "pages/api/hello.js",
+  "/colelction": "pages/colelction.html",
+  "/": "pages/index.html",
+  "/owner": "pages/owner.html",
   "/project": "pages/project.html",
-  "/": "pages/index.html"
+  "/_document": "pages/_document.js"
 }

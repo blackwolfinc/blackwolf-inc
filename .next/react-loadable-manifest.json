@@ -2,13 +2,13 @@
   "../components/Header/Header.tsx -> react-responsive": {
     "id": 1852,
     "files": [
-      "static/chunks/852.59800c83c4ea1170.js"
+      "static/chunks/852.bac1df981fe62c5f.js"
     ]
   },
   "colelction.tsx -> react-responsive": {
     "id": 1852,
     "files": [
-      "static/chunks/852.59800c83c4ea1170.js"
+      "static/chunks/852.bac1df981fe62c5f.js"
     ]
   },
   "index.tsx -> ../components/LitterWitch": {
@@ -30,7 +30,7 @@
   "index.tsx -> react-responsive": {
     "id": 1852,
     "files": [
-      "static/chunks/852.59800c83c4ea1170.js"
+      "static/chunks/852.bac1df981fe62c5f.js"
     ]
   }
 }
