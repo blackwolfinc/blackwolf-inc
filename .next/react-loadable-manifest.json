@@ -1,36 +1,26 @@
 {
   "../components/Header/Header.tsx -> react-responsive": {
-    "id": 1852,
+    "id": "../components/Header/Header.tsx -> react-responsive",
     "files": [
-      "static/chunks/852.bac1df981fe62c5f.js"
-    ]
-  },
-  "colelction.tsx -> react-responsive": {
-    "id": 1852,
-    "files": [
-      "static/chunks/852.bac1df981fe62c5f.js"
+      "static/chunks/node_modules_react-responsive_dist_react-responsive_js.js"
     ]
   },
   "index.tsx -> ../components/LitterWitch": {
-    "id": 2954,
+    "id": "index.tsx -> ../components/LitterWitch",
     "files": [
-      "static/chunks/fb7d5399.d5d404b0566d246f.js",
-      "static/chunks/399.87e0904a70b578de.js",
-      "static/chunks/954.9b56c28a9061912f.js"
+      "static/chunks/components_LitterWitch_index_tsx.js"
     ]
   },
   "index.tsx -> ../components/SoftwereDev": {
-    "id": 7438,
+    "id": "index.tsx -> ../components/SoftwereDev",
     "files": [
-      "static/chunks/fb7d5399.d5d404b0566d246f.js",
-      "static/chunks/399.87e0904a70b578de.js",
-      "static/chunks/438.bfa3db65fb11b10b.js"
+      "static/chunks/components_SoftwereDev_index_tsx.js"
     ]
   },
   "index.tsx -> react-responsive": {
-    "id": 1852,
+    "id": "index.tsx -> react-responsive",
     "files": [
-      "static/chunks/852.bac1df981fe62c5f.js"
+      "static/chunks/node_modules_react-responsive_dist_react-responsive_js.js"
     ]
   }
 }

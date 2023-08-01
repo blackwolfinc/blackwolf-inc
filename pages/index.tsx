@@ -14,10 +14,8 @@ import { Footer2 } from "../components/Footer2/Footer";
 import { Layout } from "../components/layout/Layout";
 // import Link from "next/link";
 
-import { Client } from "../components/Client/Client";
 import { OpenAnimation } from "../components/OpenAnimation/OpenAnimation";
-import { Ourservice } from "../components/OurService/Ourservice";
-import { OurProduct } from "../components/OurProduct/OurProduct";
+import { ParticlesData } from "../components/Particle/ParticlesData";
 
 const Home: NextPage = () => {
   const MediaQuery = dynamic(() => import("react-responsive"), { ssr: false });
@@ -53,6 +51,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <OpenAnimation />
+      <ParticlesData/>
       <Layout pageTitle="Jasa Pembuatan Website & Aplikasi">
         <div className="flex flex-col w-full h-full min-h-[94.5svh] relative  justify-center  items-center  overflow-x-clip">
           <div className="mt-[-2rem] flex justify-center z-30 content-center self-center items-center dropLogo ">
