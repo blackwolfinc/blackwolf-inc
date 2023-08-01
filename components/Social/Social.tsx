@@ -27,7 +27,7 @@ export const Social = () => {
     }
 
     return (
-        <div className='absolute text-white w-full flex justify-center mt-[-7rem]'>
+        <div className='absolute text-white w-full flex justify-center mt-[-8rem]'>
             <div className=' bg-[#ffffff16] w-[15rem] h-[3rem] rounded-[2rem] px-[1rem] flex justify-around items-center '>
                 <div onClick={()=>{link("1")}} className={social}><FaInstagram /></div>
                 <div onClick={()=>{link("2")}} className={social}> <FaFacebook /></div>

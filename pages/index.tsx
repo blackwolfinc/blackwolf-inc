@@ -56,8 +56,8 @@ const Home: NextPage = () => {
       <OpenAnimation />
       <ParticlesData/>
       <Layout pageTitle="Jasa Pembuatan Website & Aplikasi">
-        <div className="flex flex-col w-full h-full min-h-[94.5svh] relative  justify-center  items-center  overflow-x-clip">
-          <div className="mt-[-5rem] flex justify-center scale-95 z-30 content-center self-center items-center dropLogo ">
+        <div className="flex flex-col w-full h-full min-h-[94.2svh] relative  justify-center  items-center  overflow-x-clip">
+          <div className="mt-[-6rem] flex justify-center  z-30 content-center self-center items-center dropLogo ">
             <div className=" absolute right-0 top-0 opacity-70">
               <Image alt="" height={350} width={450} src={Claw} />
             </div>
@@ -65,11 +65,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </Layout>
-
       <Social/>
-      {/* <OurProduct/> */}
-       {/* <Ourservice/> */}
-       {/* <Client/>   */}
       <Footer2 />
     </div>
   );
