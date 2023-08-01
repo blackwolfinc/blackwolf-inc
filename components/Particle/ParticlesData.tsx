@@ -86,12 +86,6 @@ const particlesOptions = {
     opacity: {
       value: 1,
     },
-    // shape: {
-    //   type: ["image"],
-    //   image: {
-    //       src: "https://webstockreview.net/images/bat-clipart-animation-4.gif",
-    //     },
-    // },
     shape: {
       "type": "circle",
       "options": {}
@@ -104,7 +98,7 @@ detectRetina: true,
 }
 
 return (
-      <Particles className={"absolute h-[94svh] w-full " } init={particlesInit}  options={particlesOptions} />
+      <Particles className={"absolute h-[94svh] w-full " }   options={particlesOptions} />
 );
 
 }

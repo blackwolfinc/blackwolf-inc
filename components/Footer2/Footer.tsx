@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import Forest from '../../public/assets/img/Forest.png'
-import Forest2 from '../../public/assets/img/Forest2.png'
 
 export const Footer2 = () => {
   return (
