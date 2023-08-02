@@ -11,6 +11,7 @@
     "setup": "zip -r build.zip next.config.js next-env.d.ts package.json pages server.js styles tsconfig.json yarn.lock .next package-lock.json tailwind.config.js  postcss.config.js public "
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
     "framer-motion": "5.0.0",
     "next": "12.1.6",
     "react": "18.1.0",

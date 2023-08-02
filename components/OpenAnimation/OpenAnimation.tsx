@@ -8,7 +8,7 @@ export const OpenAnimation = () => {
       if (FristLoad == true) {
         setFristLoad(false);
       }
-    }, 4000);
+    }, 3000);
   }, []);
 
   if (FristLoad) {

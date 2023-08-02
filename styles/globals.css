@@ -90,10 +90,86 @@ a {
 }
 
 
+/* close */
+
+
+@keyframes AnimationTopClose {
+  0% {
+    transform: translateX(-50vw) rotate(180deg)  ;
+    opacity: 0;
+    border-bottom: 20px solid rgb(30, 30, 30);
+    border-right: 20px solid rgb(30, 30, 30);
+  }
+  60%{
+    opacity: 1;
+   
+  }
+  80%{
+    border: 0px solid rgb(30, 30, 30);
+    transform: translateX(0) rotate(180deg);
+    /* border-bottom: 8px solid rgb(241, 178, 84);
+    border-right: 8px solid rgb(241, 178, 84); */
+  }
+  100% {
+  
+    transform: translateX(0) rotate(180deg) ;
+
+  }
+ 
+}
+
+@keyframes AnimationBottomClose {
+  0% {
+    transform: translateX(50vw) rotateX(180deg)  ;
+    opacity: 0;
+    border-top: 20px solid rgb(30, 30, 30);
+    border-left: 20px solid rgb(30, 30, 30);
+  }
+  60%{
+    opacity: 1;
+    border: 0px solid rgb(30, 30, 30);
+  }
+  80%{
+ 
+    transform: translateX(0) rotateX(180deg);
+    /* border-top: 8px solid rgb(241, 178, 84);
+    border-left: 8px solid rgb(241, 178, 84); */
+  }
+  100% {
+
+    transform: translateX(0) rotateX(180deg);
+
+  }
+ 
+}
+
+@keyframes AnimationCenterClose {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+    opacity: 0;
+  }
+  60%{
+
+  }
+  70%{
+ 
+    transform: translateX(0) scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0) scale(10) rotate(45deg);
+  }
+ 
+}
+
+
+
 .animationOpenTop {
   background: url("../public/assets/img/Background.jpg");
   filter: grayscale(1) brightness(0.4);
-  animation: AnimationTop 4s cubic-bezier(0.37, 0, 0.63, 1) 0s   normal ;
+  animation: AnimationTop 3s cubic-bezier(0.37, 0, 0.63, 1) 0s   normal ;
   background-size: cover;
 
 }
@@ -101,7 +177,7 @@ a {
 .animationOpenBottom {
   background: url("../public/assets/img/Background.jpg");
   filter: grayscale(1) brightness(0.4);
-  animation: AnimationBottom  4s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal ;
+  animation: AnimationBottom  3s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal ;
   background-size: cover;
 }
 
@@ -112,10 +188,36 @@ a {
   font-size: 60px;
   background: url("../public/assets/img/claw.png") no-repeat;
   /* background-color: #1f1f1f; */
-  animation: AnimationCenter  4s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal
+  animation: AnimationCenter  3s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal
 
 }
 
+
+.animationOpenTopClose {
+  background: url("../public/assets/img/Background.jpg");
+  filter: grayscale(1) brightness(0.4);
+  animation: AnimationTopClose 3s cubic-bezier(0.37, 0, 0.63, 1) 0s   normal ;
+  background-size: cover;
+
+}
+
+.animationOpenBottomClose {
+  background: url("../public/assets/img/Background.jpg");
+  filter: grayscale(1) brightness(0.4);
+  animation: AnimationBottomClose  3s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal ;
+  background-size: cover;
+}
+
+.animateOpenCenterClose {
+  /* border: 8px solid rgb(241, 178, 84); */
+  color:  rgb(241, 178, 84);
+  font-weight: 700;
+  font-size: 60px;
+  background: url("../public/assets/img/claw.png") no-repeat;
+  /* background-color: #1f1f1f; */
+  animation: AnimationCenterClose  3s cubic-bezier(0.37, 0, 0.63, 1) 0s  normal
+
+}
 
 .animation-background {
   animation: myAnim 8s cubic-bezier(0.37, 0, 0.63, 1) 0s infinite normal
@@ -267,3 +369,12 @@ a {
 
 
 
+
+.bg-slide-2{
+  background: url("../public/assets/img/backgroundSlide2.jpg") no-repeat ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  filter: grayscale(1);
+  opacity: 0.6;
+}
