@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: Kanit, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+ 
 }
 
 a {
@@ -19,6 +20,39 @@ a {
   box-sizing: border-box;
 }
 
+
+@keyframes AnimationCard {
+  0% {
+    transform: translateX(40rem) skewX(0) scale(1);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0vw)  skewX(-8deg) scale(1.1);
+    opacity: 1;
+  
+
+  }
+ 
+}
+
+.headerCard{
+  font-weight: 800;
+  font-size: 40px;
+}
+
+@keyframes AnimationCardClose {
+  0% {
+    transform: translateX(0rem) skewX(-8deg) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(40rem) skewX(0deg) scale(1);
+    opacity: 0;
+  }
+ 
+}
+
 @keyframes AnimationTop {
   0% {
     transform: translateX(0) rotate(180deg) ;
@@ -26,7 +60,7 @@ a {
   }
   60%{
    
-    transform: translateX(0) rotate(180deg);
+    transform: translateX(0) rotate(180deg) ;
     /* border-bottom: 8px solid rgb(241, 178, 84);
     border-right: 8px solid rgb(241, 178, 84); */
   }
@@ -164,6 +198,18 @@ a {
  
 }
 
+.animatedCard {
+  /* background: url("../public/assets/img/Background.jpg"); */
+  background: #535353fd;
+  animation: AnimationCard 1s cubic-bezier(0.37, 0, 0.63, 1) 0s   normal ;
+  background-size: cover;
+}
+
+.animatedCardClose {
+  background: #535353fd;
+  animation: AnimationCardClose 1s  cubic-bezier(0.37, 0, 0.63, 1) 0s   normal ;
+  background-size: cover;
+}
 
 
 .animationOpenTop {
@@ -375,6 +421,36 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(1)  !important;
+  border-radius: 2rem;
   opacity: 0.6;
+  box-shadow: 29px 24px 15px -3px rgba(0,0,0,0.1);
 }
+
+
+.bg-card-our-solutions{
+  background: url("../public/assets/img/Background.jpg")  no-repeat ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  filter: grayscale(1) brightness(0.3) opacity(0.3);
+  color: #fff;
+  opacity: 0.9;
+}
+
+.btn-slide-2 {
+  background: url("../public/assets/img/button/button.png")  no-repeat ;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: right;
+  background-position-x:-43rem;
+  filter: grayscale(1) opacity(0.8)  ;
+  color: #a8a8a8;
+  
+}
+.btn-slide-2:hover {
+  color: #fff;
+  background: red;
+  filter: opacity(1) !important;
+  background-size: auto !important;
+} 

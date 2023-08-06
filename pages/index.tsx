@@ -83,12 +83,11 @@ const Home: NextPage = () => {
                 </div>
                 <Image alt="" height={300} width={550} src={wolf} />
               </div>
-              <button onClick={() => {handleLoading() }} className="absolute  right-0 mr-7 text-[#bfbfbf] rounded-full z-50"><FaChevronRight className="h-[3rem] w-[3rem] " /></button>
-
+              <button onClick={() => {handleLoading() }} className="absolute bottom-[10.5rem]  text-[#bfbfbf] rounded-full z-50 border-[1px] px-6 py-2 text-xl font-bold hover:scale-110 duration-300  hover:bg-[#4242426c] translate-y-2">Our Solutions</button>
             </div>
-
           </Layout>
-          <Social /></>
+          <Social />
+          </>
       )
     } else if (
       Page == 1
@@ -99,7 +98,7 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div  >
+    <div className="" >
       <OpenAnimation />
       <ParticlesData />
       {handlePage()}
