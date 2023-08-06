@@ -1,14 +1,23 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 import { useState } from "react";
+import { useRouter } from "next/router";
+import { CloseAnimation } from "../OpenAnimation/CloseAnimation";
 
 export const Header = () => {
   const MediaQuery = dynamic(() => import("react-responsive"), { ssr: false });
   const [Header, setHeader] = useState(false);
+const [dataRouter, setdataRouter] = useState("")
+  const router = useRouter()
 
+  useEffect(() => {
+    setdataRouter(router.pathname)
+  }, [router])
+  
   return (
     <>
+    {/* <CloseAnimation/> */}
       {/* Mobile Header  */}
       <MediaQuery maxWidth={768}>
         <div className="p-4 bg-transparent flex z-50 w-full fixed  justify-between items-center text-stone-200  bg-gradient-to-br from-[#323232] via-[#4b4b4b7a] to-[#08070700] tracking-widest">

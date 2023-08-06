@@ -1,6 +1,6 @@
 "use strict";
-exports.id = 311;
-exports.ids = [311];
+exports.id = 215;
+exports.ids = [215];
 exports.modules = {
 
 /***/ 5193:
@@ -82,6 +82,50 @@ const Footer2 = ()=>{
             children: "\xa9 2022 Black Wolf Tech Indonesia"
         })
     });
+};
+
+
+/***/ }),
+
+/***/ 7389:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "t": () => (/* binding */ OpenAnimation)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const OpenAnimation = ()=>{
+    const { 0: FristLoad , 1: setFristLoad  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+        setTimeout(()=>{
+            if (FristLoad == true) {
+                setFristLoad(false);
+            }
+        }, 3000);
+    }, []);
+    if (FristLoad) {
+        return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "fixed w-screen h-screen z-[99999] flex justify-center items-center overflow-hidden",
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "w-[20rem] h-[20rem] fixed z-[99999] bg-red-500 rounded-full items-center justify-center flex animateOpenCenter "
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "w-[99vw] h-[100vh] flex justify-center items-start animationOpenTop"
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "w-[99vw] h-[100vh] flex justify-center items-start animationOpenBottom"
+                })
+            ]
+        });
+    } else {
+        return null;
+    }
 };
 
 

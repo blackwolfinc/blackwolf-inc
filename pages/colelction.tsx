@@ -17,6 +17,7 @@ import Up from "../public/assets/img/Up.png";
 import Uk from "../public/assets/img/Uk.png";
 import Ub from "../public/assets/img/Ub.png";
 import Link from "next/link";
+import { OpenAnimation } from "../components/OpenAnimation/OpenAnimation";
 
 const colelction: NextPage = () => {
   const MediaQuery = dynamic(() => import("react-responsive"), { ssr: false });
@@ -46,8 +47,8 @@ const colelction: NextPage = () => {
     return a.map((value) => {
       return (
         <>
-          <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
-            <div className="dropLogoCollection">
+          <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#080808f0] via-[#8b8b8b] to-[#8e8e8e]">
+            <div className="">
               {" "}
               <Image alt="" src={Ut} />
             </div>
@@ -63,8 +64,8 @@ const colelction: NextPage = () => {
               </Link>
             </div>
           </div>
-          <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
-            <div className="dropLogoCollection">
+          <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#080808f0] via-[#8b8b8b] to-[#8e8e8e]">
+            <div className="">
               <Image alt="" src={Uo} />
             </div>
             <h1 className="text-2xl mt-3">Ultra One LLC (USA)</h1>
@@ -80,7 +81,7 @@ const colelction: NextPage = () => {
             </div>
           </div>
           {/* Logisfleet  */}
-          <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
+          <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#080808f0] via-[#8b8b8b] to-[#8e8e8e]">
             <Image alt="" src={Ue} />
             <h1 className="text-2xl  mt-3">LogisFleet Pte. Ltd. (SGP)</h1>
             <div className="flex flex-col justify-center mt-2">
@@ -102,7 +103,7 @@ const colelction: NextPage = () => {
               </Link>
             </div>
           </div>
-          <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
+          <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#080808f0] via-[#8b8b8b] to-[#8e8e8e]">
             <Image alt="" src={U} />
             <h1 className="text-2xl  mt-3">VoxTeneo . (BLG)</h1>
             <div className="flex space-x-4 justify-center mt-2">
@@ -117,7 +118,7 @@ const colelction: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
+          <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#080808f0] via-[#8b8b8b] to-[#8e8e8e]">
             <div className="dropLogoCollection">
               {" "}
               <Image alt="" src={Uk} />
@@ -135,7 +136,7 @@ const colelction: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex  w-full p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200  bg-gradient-to-r from-[#2f2f2f2d] via-[#706e6e7a] to-[#393939]">
+          <div className="flex  w-full  p-5 border-[1px] border-[#676767]  flex-col  rounded-md  flex justify-center  content-center self-center text-center shadow-2xl  text-stone-200 bg-gradient-to-r from-[#080808f0] via-[#8b8b8b] to-[#8e8e8e]">
             <div className="dropLogoCollection">
               {" "}
               <Image alt="" src={Up} />
@@ -159,6 +160,7 @@ const colelction: NextPage = () => {
   return (
     <>
       <Layout pageTitle="colelction">
+        <OpenAnimation/>
         <MediaQuery minWidth={768}>
           <div className="relative  items-center pt-[20%] pb-[10%] mt-0   text-white px-[1.45rem] flex flex-col">
             <h1 className="text-3xl"> Our Client Webiste</h1>

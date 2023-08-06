@@ -23,7 +23,7 @@ import { OurProduct } from "../components/OurProduct/OurProduct";
 import Gif from "../public/assets/img/png/barbatos.png"
 import { Social } from "../components/Social/Social";
 import { Slide2 } from "../components/Slide/Slide2";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CloseAnimation } from "../components/OpenAnimation/CloseAnimation";
 
 const Home: NextPage = () => {
@@ -60,12 +60,16 @@ const Home: NextPage = () => {
     },
   };
 
+  useEffect(() => {
+  setPage(0)
+  }, [])
+  
+
   const handleLoading =()=>{
     setcloseAnimation(true)
     setTimeout(() => {
       setPage(Page + 1)
     }, 3000);
-
    
   }
 

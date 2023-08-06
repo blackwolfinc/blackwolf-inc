@@ -4,12 +4,15 @@ import Barbatos from "../../public/assets/img/barbatos.gif";
 import BarbatosBackground from "../../public/assets/img/png/BackgroundBarbatos.png";
 import { Client } from "../Client/Client";
 import { OpenAnimation } from "../OpenAnimation/OpenAnimation";
+import { Header } from "../Header/Header";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const Slide2 = () => {
   const [Data, setData] = useState(3);
   const [LoadClose, setLoadClose] = useState(false)
+  const router = useRouter()
   useEffect(() => {
-
   }, [Data])
 
 
@@ -60,6 +63,11 @@ export const Slide2 = () => {
               Expert Software Developers: Our team consists of highly skilled and experienced software developers, ensuring top-notch solutions for your project.
               <br></br>  <br></br>
               Partner with us, the trusted software developers, and witness how technology transforms your business. Embrace efficiency, innovation, and excellence with our team driving your project to success. Let work together to bring your vision to life and set new standards in your industry.
+              <br></br>  <br></br>
+            <button onClick={()=>{router.push("/colelction")
+
+}} className="bg-gray-600/60 px-[2rem] py-[1rem] z-40 hover:scale-105 hover:bg-gray-600 duration-500">More Details</button>
+{/* </Link> */}
             </div>
           </div>
         </div>
@@ -72,7 +80,7 @@ export const Slide2 = () => {
             <div className="2xl:skew-x-[8deg]  h-full  2xl:w-full">
               <div className="px-[2rem] md:px-[6rem]"> <h1 className="headerCard">Our Customer</h1>
                 Our Customers are The Driving Force Behind Our Tech Company </div>
-              <div className="md:skew-x-[0deg] md:ml-[-1rem]  md:w-[150%] mt-12 ">  <Client /></div>
+              <div className="md:skew-x-[-8deg] md:ml-[-1rem]  md:w-[150%] mt-12 ">  <Client /></div>
             </div>
           </div>
         </div>
@@ -98,8 +106,10 @@ export const Slide2 = () => {
   return (
     <div className="">
       <OpenAnimation />
+      <div className="lg:hidden"><Header /></div>
+
       <div className="w-full flex justify-center h-full bg-gradient-to-bl  from-[#0f0404] via-[#6b6b6b] to-[#03030a] lg:h-[94.2svh] py-[2rem] md:py-[6rem]  relative overflow-x-clip">
-        <div className="flex w-full h-full flex-col lg:flex-row container justify-between md:scale-90">
+        <div className="flex w-full h-full flex-col lg:flex-row container mt-[5rem] md:mt-0  justify-between md:scale-90">
           <div className="bg-slide-2 w-full absolute h-[85vh] z-0 top-0 left-0 !opacity-40 !brightness-50"></div>
           <div className="w-fit container relative ml-0  lg:left-[-5rem] left-0  border-[#848484] flex justify-center items-center">
             <div className="relative scale-90">
@@ -117,13 +127,13 @@ export const Slide2 = () => {
                 ></Image>
               </div>
             </div>
-            <div onClick={() => { DataHideShow(1) }} className="absolute btn-slide-2 px-[2rem] py-6 rounded-md skew-x-[-8deg] mt-[32rem] font-bold text-2xl right-[9rem] md:right-[-6rem] min-w-[14rem] hover:translate-x-[3rem] duration-500 hover:text-orange-400 hover:bg-[#fff] cursor-pointer">
+            <div onClick={() => { DataHideShow(1) }} className="absolute btn-slide-2 px-[2rem] py-6 rounded-md skew-x-[-8deg] mt-[32rem] font-bold text-2xl right-[9rem] md:right-[-6rem] min-w-[14rem] hover:translate-x-[3rem] duration-500 hover:text-white hover:bg-gray-600/60  cursor-pointer">
               About Us
             </div>
-            <div onClick={() => { DataHideShow(2) }} className="absolute btn-slide-2 px-[2rem] py-6 rounded-md skew-x-[-8deg] mt-[20rem] font-bold text-2xl right-[9rem] md:right-[-6rem] min-w-[14rem] hover:translate-x-[3rem] duration-500 hover:text-orange-400 hover:bg-[#fff] cursor-pointer">
+            <div onClick={() => { DataHideShow(2) }} className="absolute btn-slide-2 px-[2rem] py-6 rounded-md skew-x-[-8deg] mt-[20rem] font-bold text-2xl right-[9rem] md:right-[-6rem] min-w-[14rem] hover:translate-x-[3rem] duration-500 hover:text-white hover:bg-gray-600/60  cursor-pointer">
               Our Project
             </div>
-            <div onClick={() => { DataHideShow(3) }} className="absolute  btn-slide-2  px-[2rem] py-6 rounded-md skew-x-[-8deg] mt-[8rem] font-bold text-2xl right-[9rem] md:right-[-6rem] min-w-[14rem] hover:translate-x-[3rem] duration-500 hover:text-orange-400 hover:bg-[#fff] cursor-pointer">
+            <div onClick={() => { DataHideShow(3) }} className="absolute  btn-slide-2  px-[2rem] py-6 rounded-md skew-x-[-8deg] mt-[8rem] font-bold text-2xl right-[9rem] md:right-[-6rem] min-w-[14rem] hover:translate-x-[3rem] duration-500 hover:text-white hover:bg-gray-600/60  cursor-pointer">
               {" "}
               Our Customer
             </div>
